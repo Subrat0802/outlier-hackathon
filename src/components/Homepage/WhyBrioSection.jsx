@@ -25,9 +25,9 @@ const WhyBrioSection = () => {
           Why Brio?
         </ScrollFloat>
       </div>
-        <p className="text-white/50 mt-2 leading-tight">
+        {/* <p className="text-white/50 mt-2 leading-tight">
           A smarter way to learn, track, and grow — all in one place.
-        </p>
+        </p> */}
       </div>
       <div className="grid grid-cols-3 gap-10 mt-10">
         {whyBrio.map((el) => (
@@ -36,7 +36,7 @@ const WhyBrioSection = () => {
             key={el.id}
             className="relative group border h-fit rounded-lg border-white/10 transition-all duration-200 overflow-hidden"
           >
-            <div className="absolute inset-0 p-5 z-10">
+            <div className="absolute  flex flex-col justify-center items-center inset-0 p-5 z-10">
               <p className="text-2xl font-bold mb-4 text-white/60">
                 {el.title}
               </p>
