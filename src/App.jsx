@@ -7,7 +7,7 @@ import Profile from "./pages/Profile";
 
 function App() {
   return (
-    <div className="bg-[#0f0f0f] scroll-smooth text-white min-h-[100dvh]">
+    <div className="bg-[#0f0f0f] select-none scroll-smooth text-white min-h-[100dvh]">
       <Header />
       <Routes>
         <Route path="/" element={<Home />}/>

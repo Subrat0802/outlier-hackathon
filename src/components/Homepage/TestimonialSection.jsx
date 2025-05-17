@@ -3,6 +3,7 @@ import { testimonials } from "../../../data/testimonialData";
 import { CircleArrowLeft } from "lucide-react";
 import { CircleArrowRight } from "lucide-react";
 import { Quote } from "lucide-react";
+import ScrollFloat from "../../ui/ScrollFloat";
 
 const TestimonialSection = () => {
   const [count, setCount] = useState(0);
@@ -26,7 +27,17 @@ const TestimonialSection = () => {
 
   return (
     <div className="min-h-[75dvh] cursor-default z-10 relative text-center select-none">
-      <p className="text-4xl font-extrabold mb-8">"Reviews"</p>
+      <div className="text-center font-extrabold ">
+        <ScrollFloat
+          animationDuration={0.5}
+          ease="back.inOut(2)"
+          scrollStart="center bottom+=50%"
+          scrollEnd="bottom bottom-=40%"
+          stagger={0.03}
+        >
+          reviews
+        </ScrollFloat>
+      </div>
       <div className="w-full px-8 rounded-lg bg-blue-400 py-16">
         <div className="text-2xl text-black flex justify-between items-center">
           <div className={`flex gap-1 justify-start mt-6  transition-all duration-300 ease-in-out transform ${

@@ -20,7 +20,7 @@ const Header = () => {
             <Link to={"/"}><Logo /></Link>
             <div className='flex justify-center items-center gap-6 text-white/50'>
               <Link to={"/"}><HomeIcon /></Link>
-              <a href="https://github.com/Subrat0802/outlier-hackathon"><GithubIcon /></a>
+              <a href="https://github.com/Subrat0802/outlier-hackathon" target="_blank"><GithubIcon /></a>
               {
                 token === "" && <Link to={"/profile/1"}><Button onClick={handleClick} text={"Join Now"} /></Link>
               }

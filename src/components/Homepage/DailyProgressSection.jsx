@@ -4,7 +4,7 @@ import progress from "/img.png"
 const DailyProgressSection = () => {
   return (
     <div className="w-full  text-white">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-12 gap-10">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between bg-[#121212]  gap-10">
         <img width={350} src={progress}/>
 
         <div className="w-full md:w-[70%] text-left">
