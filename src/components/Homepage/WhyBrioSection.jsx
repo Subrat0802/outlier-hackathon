@@ -1,9 +1,10 @@
 import React from "react";
 import { whyBrio } from "../../../data/whybrio";
+import Button from "../../ui/Button";
 
 const WhyBrioSection = () => {
   return (
-    <div className="cursor-default min-h-[75dvh] ">
+    <div className="cursor-default pb-20">
       <div className=" text-center ">
         <p className="text-4xl font-extrabold ">"Why Brio?"</p>
         <p className="text-white/50 mt-2 leading-tight">
@@ -25,7 +26,9 @@ const WhyBrioSection = () => {
           </div>
           
         ))}
-        <p>scsd</p>
+        <div className="flex justify-center items-center  rounded-lg ">
+            <Button text={"Join Now"}/>
+        </div>
       </div>
     </div>
   );
