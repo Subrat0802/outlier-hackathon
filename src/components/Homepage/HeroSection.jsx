@@ -7,12 +7,14 @@ import RotatingText from "../../ui/RotatingText";
 import Waves from "../../ui/WaveBg";
 import Aurora from "../../ui/AuroraBg";
 import BlurText from "../../ui/BlurText";
+import { toast } from "sonner";
 
 const HeroSection = () => {
   const [token, setToken] = useState(localStorage.getItem("token") || "");
   const handleClick = () => {
     localStorage.setItem("token", "123");
     setToken("123");
+    toast.success("You are logged in")
   };
   return (
     <div className="min-h-[100dvh] flex justify-center items-center flex-col">

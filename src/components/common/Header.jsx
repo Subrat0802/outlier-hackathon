@@ -3,12 +3,14 @@ import Logo from '../../assets/svgs/Logo'
 import Button from '../../ui/Button'
 import { Link, useParams } from 'react-router-dom'
 import { GithubIcon, HomeIcon, User } from 'lucide-react'
+import { toast } from 'sonner'
 
 const Header = () => {
   const [token, setToken] = useState(localStorage.getItem("token") || "");
   const handleClick = () => {
     localStorage.setItem("token", "123");
     setToken("123");
+    toast.success("You are logged in")
   }
 
 

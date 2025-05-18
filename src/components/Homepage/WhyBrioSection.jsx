@@ -4,12 +4,14 @@ import Button from "../../ui/Button";
 import { Link } from "react-router-dom";
 import PixelCard from "../../ui/PixelCard";
 import ScrollFloat from "../../ui/ScrollFloat";
+import { toast } from "sonner";
 
 const WhyBrioSection = () => {
   const [token, setToken] = useState(localStorage.getItem("token") || "");
   const handleClick = () => {
     localStorage.setItem("token", "123");
     setToken("123");
+    toast.success("You are logged in")
   };
   return (
     <div className="cursor-default pb-20">
